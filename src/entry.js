@@ -9,3 +9,5 @@ var baz = require('./Example/Foo/Baz');
 var jam = require('./jam');
 
 console.log(Prelude, test, foo, baz, jam);
+
+if (module.hot) module.hot.accept()
