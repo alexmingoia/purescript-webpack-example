@@ -14,7 +14,16 @@ var config
     , devtool: 'source-map'
     , devServer: { contentBase: '.'
                  , port: 4008
-                 , stats: 'errors-only'
+                 , stats: { colors: false
+                          , errors: true
+                          , version: false
+                          , assets: false
+                          , timings: false
+                          , hash: false
+                          , reasons: false
+                          , chunks: false
+                          , chunkModules: false
+                          }
                  }
     , output: { path: __dirname
               , pathinfo: true

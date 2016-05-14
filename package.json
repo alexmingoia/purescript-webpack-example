@@ -11,11 +11,11 @@
   },
   "files": [],
   "scripts": {
-    "webpack": "webpack --progress --colors --bail",
-    "webpack:watch": "webpack --progress --colors --watch",
-    "webpack:watch:debug": "DEBUG=purescript-webpack-plugin,purs-loader webpack --progress --colors --watch",
-    "webpack:server": "webpack-dev-server --progress --colors --inline --hot",
-    "webpack:server:debug": "DEBUG=purescript-webpack-plugin,purs-loader webpack-dev-server --progress --colors --inline --hot",
+    "webpack": "webpack --progress --bail",
+    "webpack:watch": "webpack --progress --watch",
+    "webpack:watch:debug": "DEBUG=purs-loader webpack --progress --watch",
+    "webpack:server": "webpack-dev-server --inline --hot",
+    "webpack:server:debug": "DEBUG=purs-loader webpack-dev-server --progress --inline --hot",
     "start": "node bundle.js"
   },
   "dependencies": {
